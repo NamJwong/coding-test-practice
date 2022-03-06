@@ -1,8 +1,10 @@
 function solution(n, lost, reserve) {
   for (let i = 0; i < reserve.length; i++) {
-    if (lost.includes(reserve[i])) {
+    let lostIndex = lost.indexOf(reserve[i]);
+    if (lostIndex > -1) {
       reserve.splice(i, 1);
       i--;
+      lost.splice(lostIndex, 1);
     }
   }
   let isFirst = false;
@@ -24,6 +26,8 @@ function solution(n, lost, reserve) {
         reserveIndexFront = reserveIndexBack;
         reserveIndexBack = temp;
       }
+    } else {
+      isFirst = false;
     }
   }
   return n - lost.length;
