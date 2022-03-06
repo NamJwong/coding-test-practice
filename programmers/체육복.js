@@ -1,4 +1,12 @@
 function solution(n, lost, reserve) {
+  for (let i = 0; i < reserve.length; i++) {
+    let lostIndex = lost.indexOf(reserve[i]);
+    if (lostIndex > -1) {
+      reserve.splice(i, 1);
+      i--;
+      lost.splice(lostIndex, 1);
+    }
+  }
   lost.sort(function (a, b) {
     return a - b;
   });
@@ -9,11 +17,8 @@ function solution(n, lost, reserve) {
   let rPointer = 0;
   let count = 0;
   while (lPointer < lost.length) {
-    console.log("--------lPointer:" + lPointer + "-------------");
-    console.log("lost", lost.join(", "));
     while (rPointer < reserve.length) {
       const difference = lost[lPointer] - reserve[rPointer];
-      console.log(`${lost[lPointer]}-${reserve[rPointer]}=${difference}`);
       if (Math.abs(difference) > 1) {
         if (difference > 0) {
           rPointer++;
@@ -21,7 +26,6 @@ function solution(n, lost, reserve) {
           break;
         }
       } else {
-        console.log(rPointer);
         rPointer++;
         count++;
         break;
@@ -29,7 +33,6 @@ function solution(n, lost, reserve) {
     }
     if (rPointer >= reserve.length) break;
     lPointer++;
-    console.log("lPointer++할때의 rPointer", rPointer);
   }
   return n - (lost.length - count);
 }
