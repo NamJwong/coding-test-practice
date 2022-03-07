@@ -3,36 +3,33 @@ function solution(n, lost, reserve) {
     let lostIndex = lost.indexOf(reserve[i]);
     if (lostIndex > -1) {
       reserve.splice(i, 1);
-      i--;
       lost.splice(lostIndex, 1);
+      i--;
     }
   }
-  lost.sort(function (a, b) {
-    return a - b;
-  });
-  reserve.sort(function (a, b) {
-    return a - b;
-  });
+
+  lost.sort((a, b) => a - b);
+  reserve.sort((a, b) => a - b);
+
   let lPointer = 0;
   let rPointer = 0;
-  let count = 0;
-  while (lPointer < lost.length) {
+  let cnt = 0;
+  for (; lPointer < lost.length; lPointer++) {
     while (rPointer < reserve.length) {
-      const difference = lost[lPointer] - reserve[rPointer];
-      if (Math.abs(difference) > 1) {
-        if (difference > 0) {
+      const diff = lost[lPointer] - reserve[rPointer];
+      if (Math.abs(diff) > 1) {
+        if (diff > 0) {
           rPointer++;
         } else {
           break;
         }
       } else {
         rPointer++;
-        count++;
+        cnt++;
         break;
       }
     }
     if (rPointer >= reserve.length) break;
-    lPointer++;
   }
-  return n - (lost.length - count);
+  return n - (lost.length - cnt);
 }
