@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static final int INF = (int) 1e9; // 왜 무한을 의미하는 값으로 10억을 설정하는지
     public static int n, m;
-    public static ArrayList<ArrayList<Node>> graph = new ArrayList<ArrayList<Node>>();
+    public static ArrayList<ArrayList<Node>> graph = new ArrayList<>();
     public static boolean[] visited;
     public static int[] shortestTable;
 
@@ -21,6 +21,7 @@ public class Main {
             int to = sc.nextInt();
             int distance = sc.nextInt();
             graph.get(from).add(new Node(to, distance));
+            graph.get(to).add(new Node(from, distance));
         }
         int p = sc.nextInt();
         int q = sc.nextInt();
@@ -50,11 +51,11 @@ public class Main {
     }
 
     static class Node {
-        int index;
+        int adjacent;
         int distance;
 
-        public Node(int index, int distance) {
-            this.index = index;
+        public Node(int adjacent, int distance) {
+            this.adjacent = adjacent;
             this.distance = distance;
         }
     }
@@ -65,31 +66,31 @@ public class Main {
         Arrays.fill(shortestTable, INF);
     }
 
-    public static int getSmallestNode() {
-        int min_value = INF;
-        int index = 0;
+    public static int getShortestNode() {
+        int minDistance = INF;
+        int shortestNode = -1;
         for(int i = 1; i <= n; i++) {
-            if(shortestTable[i] < min_value && !visited[i]) {
-                min_value = shortestTable[i];
-                index = i;
+            if(shortestTable[i] < minDistance && !visited[i]) {
+                minDistance = shortestTable[i];
+                shortestNode = i;
             }
         }
-        return index;
+        return shortestNode;
     }
 
     public static void dijkstra(int startNode) {
         shortestTable[startNode] = 0;
         visited[startNode] = true;
         for(int i = 0; i < graph.get(startNode).size(); i++) {
-            shortestTable[graph.get(startNode).get(i).index] = graph.get(startNode).get(i).distance;
+            shortestTable[graph.get(startNode).get(i).adjacent] = graph.get(startNode).get(i).distance;
         }
         for(int i = 0; i < n - 1; i++) {
-            int smallestNode = getSmallestNode();
-            visited[smallestNode] = true;
-            for(int j = 0; j < graph.get(smallestNode).size(); j++) {
-                int distance = shortestTable[smallestNode] + graph.get(smallestNode).get(j).distance;
-                if(distance < shortestTable[graph.get(smallestNode).get(j).index]) {
-                    shortestTable[graph.get(smallestNode).get(j).index] = distance;
+            int shortestNode = getShortestNode();
+            visited[shortestNode] = true;
+            for(int j = 0; j < graph.get(shortestNode).size(); j++) {
+                int distance = shortestTable[shortestNode] + graph.get(shortestNode).get(j).distance;
+                if(distance < shortestTable[graph.get(shortestNode).get(j).adjacent]) {
+                    shortestTable[graph.get(shortestNode).get(j).adjacent] = distance;
                 }
             }
         }
