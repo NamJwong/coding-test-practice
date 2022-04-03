@@ -1,6 +1,9 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class Main {
     public static final int INF = (int) 1e9; // 왜 무한을 의미하는 값으로 10억을 설정하는지
@@ -9,31 +12,36 @@ public class Main {
     public static boolean[] visited;
     public static int[] shortestTable;
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        n = sc.nextInt();
-        m = sc.nextInt();
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        n = Integer.parseInt(st.nextToken());
+        m = Integer.parseInt(st.nextToken());
         for(int i = 0; i < n+1; i++) {
             graph.add(new ArrayList<>());
         }
         for(int i = 0; i < m; i++) {
-            int from = sc.nextInt();
-            int to = sc.nextInt();
-            int distance = sc.nextInt();
+            st = new StringTokenizer(br.readLine());
+            int from = Integer.parseInt(st.nextToken());
+            int to = Integer.parseInt(st.nextToken());
+            int distance = Integer.parseInt(st.nextToken());
             graph.get(from).add(new Node(to, distance));
             graph.get(to).add(new Node(from, distance));
         }
-        int p = sc.nextInt();
-        int q = sc.nextInt();
+        st = new StringTokenizer(br.readLine());
+        int p = Integer.parseInt(st.nextToken());
+        int q = Integer.parseInt(st.nextToken());
         int[] house = new int[p];
         int[] store = new int[q];
+        st = new StringTokenizer(br.readLine());
         for(int i = 0; i < p; i++) {
-            house[i] = sc.nextInt();
+            house[i] = Integer.parseInt(st.nextToken());
         }
+        st = new StringTokenizer(br.readLine());
         for(int i = 0; i < q; i++) {
-            store[i] = sc.nextInt();
+            store[i] = Integer.parseInt(st.nextToken());
         }
-        sc.close();
+
         int min = INF;
         int answer = 0;
         Arrays.sort(house);
