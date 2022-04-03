@@ -3,14 +3,14 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
 public class Main {
     public static final int INF = (int) 1e9; // 왜 무한을 의미하는 값으로 10억을 설정하는지
     public static int n, m;
     public static ArrayList<ArrayList<Node>> graph = new ArrayList<>();
-    public static boolean[] visited;
-    public static int[] shortestTable;
+    public static int[] d;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -49,8 +49,8 @@ public class Main {
             init();
             dijkstra(house[i]);
             for(int j = 0; j < q; j++) {
-                if(shortestTable[store[j]] < min) {
-                    min = shortestTable[store[j]];
+                if(d[store[j]] < min) {
+                    min = d[store[j]];
                     answer = house[i];
                 }
             }
@@ -58,47 +58,45 @@ public class Main {
         System.out.println(answer);
     }
 
-    static class Node {
-        int adjacent;
+    static class Node implements Comparable<Node> {
+        int nodeIndex;
         int distance;
 
-        public Node(int adjacent, int distance) {
-            this.adjacent = adjacent;
+        public Node(int nodeIndex, int distance) {
+            this.nodeIndex = nodeIndex;
             this.distance = distance;
+        }
+
+        @Override
+        public int compareTo(Node node) {
+            if(this.distance > node.distance) return -1;
+            else if(this.distance < node.distance) return 1;
+            if(this.distance == node.distance)
+                return this.nodeIndex > node.nodeIndex ? -1 : 1;
+            return 0;
         }
     }
 
     public static void init() {
-        visited = new boolean[5001];
-        shortestTable = new int[5001];
-        Arrays.fill(shortestTable, INF);
+        d = new int[5001];
+        Arrays.fill(d, INF);
     }
 
-    public static int getShortestNode() {
-        int minDistance = INF;
-        int shortestNode = -1;
-        for(int i = 1; i <= n; i++) {
-            if(shortestTable[i] < minDistance && !visited[i]) {
-                minDistance = shortestTable[i];
-                shortestNode = i;
-            }
-        }
-        return shortestNode;
-    }
-
-    public static void dijkstra(int startNode) {
-        shortestTable[startNode] = 0;
-        visited[startNode] = true;
-        for(int i = 0; i < graph.get(startNode).size(); i++) {
-            shortestTable[graph.get(startNode).get(i).adjacent] = graph.get(startNode).get(i).distance;
-        }
-        for(int i = 0; i < n - 1; i++) {
-            int shortestNode = getShortestNode();
-            visited[shortestNode] = true;
-            for(int j = 0; j < graph.get(shortestNode).size(); j++) {
-                int distance = shortestTable[shortestNode] + graph.get(shortestNode).get(j).distance;
-                if(distance < shortestTable[graph.get(shortestNode).get(j).adjacent]) {
-                    shortestTable[graph.get(shortestNode).get(j).adjacent] = distance;
+    public static void dijkstra(int start) {
+        PriorityQueue<Node> pq = new PriorityQueue<>();
+        d[start] = 0;
+        pq.add(new Node(start, 0));
+        while (!pq.isEmpty()) {
+            int current = pq.peek().nodeIndex;
+            int distance = pq.peek().distance;
+            pq.poll();
+            if(d[current] < distance) continue;
+            for(int i = 0; i < graph.get(current).size(); i++) {
+                int next = graph.get(current).get(i).nodeIndex;
+                int nextDistance = distance + graph.get(current).get(i).distance;
+                if(nextDistance < d[next]) {
+                    d[next] = nextDistance;
+                    pq.add(new Node(next, nextDistance));
                 }
             }
         }
