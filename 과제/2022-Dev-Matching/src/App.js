@@ -20,7 +20,6 @@ export default class App extends Component {
   }
 
   setSuggestionList() {
-    console.log(this);
     // useState 마냥 this.state에 아예 이 형태를 묶어놓으면 좋을 듯
     if (typeof arguments[0] === 'function')
       this.setState({
@@ -30,8 +29,7 @@ export default class App extends Component {
   }
 
   onChangeInput(newState) {
-    // 얘는 안됨 왜?
-    console.log(this.setSuggestionList);
+    // 얘를 쓰는게 낫나?
     this.setSuggestionList(newState);
   }
 
@@ -40,7 +38,6 @@ export default class App extends Component {
     //   searchWord: this.state.searchWord,
     // });
     new SearchInput($('.SearchInput'), {
-      suggestionList: this.state.suggestionList,
       onChange: this.setSuggestionList.bind(this),
     });
     new Suggestion($('.Suggestion'), {

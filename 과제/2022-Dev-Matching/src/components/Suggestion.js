@@ -2,7 +2,6 @@ import Component from './base/Component.js';
 
 export default class Suggestion extends Component {
   template() {
-    console.log('why', this.props.suggestionList);
     return `
       <ul>
         ${this.props.suggestionList
@@ -10,12 +9,5 @@ export default class Suggestion extends Component {
           .join(' ')}
       </ul>
     `;
-  }
-
-  setEvent() {
-    // const { filterItem } = this.$props;
-    // // this.addEvent('click', '.filterBtn', ({ target }) => {
-    // //   filterItem(Number(target.dataset.isFilter));
-    // // });
   }
 }
