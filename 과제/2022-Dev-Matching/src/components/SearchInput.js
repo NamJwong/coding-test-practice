@@ -7,8 +7,9 @@ export default class SearchInput extends Component {
   }
 
   setEvent() {
-    const { onChange, suggestionList } = this.props;
+    const { onChange } = this.props;
     this.addEvent('change', '.SearchInput__input', async () => {
+      // api 함수 만들기
       fetch(
         `https://wr4a6p937i.execute-api.ap-northeast-2.amazonaws.com/dev/languages?keyword=${
           $('.SearchInput__input').value
@@ -18,18 +19,7 @@ export default class SearchInput extends Component {
         .then((response) => response.json())
         .then((data) => {
           onChange(data);
-          console.log(suggestionList);
         });
     });
-    // on(this.$target, 'change', async function async() {
-    //   // api 함수 만들기
-    //   const response = await fetch(
-    //     `https://wr4a6p937i.execute-api.ap-northeast-2.amazonaws.com/dev/languages?keyword=${
-    //       $('.SearchInput__input').value
-    //     }`,
-    //     { method: 'GET' }
-    //   );
-    //   onChange(response.json());
-    // });
   }
 }
