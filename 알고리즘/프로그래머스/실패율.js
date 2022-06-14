@@ -1,18 +1,18 @@
 function solution(N, stages) {
   const stageInfo = [];
   for (let stage = 1; stage <= N; stage++) {
-    const fails = stages.reduce(
+    const fail = stages.reduce(
       (acc, curr) => (curr === stage ? acc + 1 : acc),
       0
     );
-    const trys = stageInfo[stage - 2]
-      ? stageInfo[stage - 2].try - stageInfo[stage - 2].fail
+    const reach = stageInfo[stage - 2]
+      ? stageInfo[stage - 2].reach - stageInfo[stage - 2].fail
       : stages.length;
     stageInfo.push({
       stage: stage,
-      fail: fails,
-      try: trys,
-      rate: fails / trys,
+      fail: fail,
+      reach: reach,
+      rate: fail / reach,
     });
   }
   return stageInfo
