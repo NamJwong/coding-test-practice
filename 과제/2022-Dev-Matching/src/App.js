@@ -7,6 +7,7 @@ export default class App extends Component {
   setup() {
     this.state = {
       suggestionList: [],
+      searchWord: '',
     };
   }
 
@@ -24,13 +25,27 @@ export default class App extends Component {
     if (typeof arguments[0] === 'function')
       this.setState({
         suggestionList: arguments[0](this.state.suggestionList),
+        ...this.state,
       });
-    else this.setState({ suggestionList: arguments[0] });
+    else this.setState({ suggestionList: arguments[0], ...this.state });
   }
 
-  onChangeInput(newState) {
+  setSearchWord() {
+    // useState 마냥 this.state에 아예 이 형태를 묶어놓으면 좋을 듯
+    console.log('dmdld', arguments[0]);
+    if (typeof arguments[0] === 'function')
+      this.setState({
+        searchWord: arguments[0](this.state.searchWord),
+        ...this.state,
+      });
+    else this.setState({ searchWord: arguments[0], ...this.state });
+  }
+
+  onChangeInput(suggestionList, searchWord) {
     // 얘를 쓰는게 낫나?
-    this.setSuggestionList(newState);
+    this.setState({ suggestionList: suggestionList, searchWord: searchWord });
+    // this.setSuggestionList(suggestionList);
+    // this.setSearchWord(searchWord);
   }
 
   mounted() {
@@ -38,7 +53,8 @@ export default class App extends Component {
     //   searchWord: this.state.searchWord,
     // });
     new SearchInput($('.SearchInput'), {
-      onChange: this.setSuggestionList.bind(this),
+      onChange: this.onChangeInput.bind(this),
+      searchWord: this.state.searchWord,
     });
     new Suggestion($('.Suggestion'), {
       suggestionList: this.state.suggestionList,
