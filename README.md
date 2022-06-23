@@ -15,7 +15,12 @@
 ### 모눈종이 위에 대각선을 그었을 때 대각선과 겹치는 칸의 수 구하기
 - https://github.com/NamJwong/coding-test-practice/pull/38
 
-## 기타
+### 진법 변환
+- https://github.com/NamJwong/coding-test-practice/pull/40
+
+## 문자열
+### 문자열 뒤집기
+- https://github.com/NamJwong/coding-test-practice/pull/40
 
 ### 정규표현식
 - 이론
@@ -25,7 +30,6 @@
   - https://github.com/NamJwong/coding-test-practice/pull/16 replace + 다양한 정규표현식
   - https://github.com/NamJwong/coding-test-practice/pull/22 match + i 플래그
   - https://github.com/NamJwong/coding-test-practice/pull/34 match + test + 다양한 정규표현식
-
 
 
 ## JavaScript Methods
