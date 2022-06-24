@@ -18,6 +18,9 @@
 ### 진법 변환
 - https://github.com/NamJwong/coding-test-practice/pull/40
 
+### 순열
+- https://github.com/NamJwong/coding-test-practice/pull/41
+
 ## 문자열
 ### 문자열 뒤집기
 - https://github.com/NamJwong/coding-test-practice/pull/40
