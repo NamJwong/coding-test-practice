@@ -39,6 +39,9 @@
 ### reduce
 - https://github.com/NamJwong/coding-test-practice/pull/12
 
+### 그 외 사용법은 쉽지만 있다는 것을 기억하고 싶은 메소드
+- padStart/End
+
 ## JavaScript Built-in Objects
 ### Map
 - https://github.com/NamJwong/coding-test-practice/pull/4
