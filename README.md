@@ -37,7 +37,7 @@
 ## 배열
 ### 중복 제거
 - https://github.com/NamJwong/coding-test-practice/pull/6 인접한 숫자
-- https://github.com/NamJwong/coding-test-practice/pull/4 
+- https://github.com/NamJwong/coding-test-practice/pull/4 문자열
 
 ## JavaScript Methods
 ### reduce
