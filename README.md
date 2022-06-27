@@ -34,6 +34,10 @@
   - https://github.com/NamJwong/coding-test-practice/pull/22 match + i 플래그
   - https://github.com/NamJwong/coding-test-practice/pull/34 match + test + 다양한 정규표현식
 
+## 배열
+### 중복 제거
+- https://github.com/NamJwong/coding-test-practice/pull/6 인접한 숫자
+- https://github.com/NamJwong/coding-test-practice/pull/4 
 
 ## JavaScript Methods
 ### reduce
