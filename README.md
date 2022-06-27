@@ -34,6 +34,9 @@
   - https://github.com/NamJwong/coding-test-practice/pull/22 match + i 플래그
   - https://github.com/NamJwong/coding-test-practice/pull/34 match + test + 다양한 정규표현식
 
+### 문자열 비교
+- https://github.com/NamJwong/coding-test-practice/pull/18
+
 ## 배열
 ### 중복 제거
 - https://github.com/NamJwong/coding-test-practice/pull/6 인접한 숫자
@@ -45,6 +48,7 @@
 
 ### 그 외 사용법은 쉽지만 있다는 것을 기억하고 싶은 메소드
 - padStart/End
+- [localeCompare](https://opentutorials.org/course/50/91)
 
 ## JavaScript Built-in Objects
 ### Map
