@@ -59,4 +59,5 @@
 - https://github.com/NamJwong/coding-test-practice/pull/4
 
 ### Set
-- https://github.com/NamJwong/coding-test-practice/pull/4 중복 제거 위해 활용 
+- https://github.com/NamJwong/coding-test-practice/pull/4
+- https://github.com/NamJwong/coding-test-practice/pull/46/files
