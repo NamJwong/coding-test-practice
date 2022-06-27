@@ -48,6 +48,7 @@
 ## JavaScript Methods
 ### reduce
 - https://github.com/NamJwong/coding-test-practice/pull/12
+- https://github.com/NamJwong/coding-test-practice/pull/48 합 구하는 용도 X (max 값 업데이트)
 
 ### 그 외 사용법은 쉽지만 있다는 것을 기억하고 싶은 메소드
 - padStart/End
