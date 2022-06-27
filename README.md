@@ -9,6 +9,9 @@
 ### 소수 판별
 - https://github.com/NamJwong/coding-test-practice/pull/36 2부터 직접 나누어보는 방법(에라토스테네스 체 사용이 적절치 않을 때)
 
+### 약수 구하기
+- https://github.com/NamJwong/coding-test-practice/pull/27
+
 ### 최대공약수 구하기
 - https://github.com/NamJwong/coding-test-practice/pull/38 유클리드 호제법
 
