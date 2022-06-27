@@ -60,4 +60,4 @@
 
 ### Set
 - https://github.com/NamJwong/coding-test-practice/pull/4
-- https://github.com/NamJwong/coding-test-practice/pull/46/files
+- https://github.com/NamJwong/coding-test-practice/pull/46
