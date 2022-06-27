@@ -52,6 +52,7 @@
 ### 그 외 사용법은 쉽지만 있다는 것을 기억하고 싶은 메소드
 - padStart/End
 - [localeCompare](https://opentutorials.org/course/50/91)
+- [some](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
 
 ## JavaScript Built-in Objects
 ### Map
