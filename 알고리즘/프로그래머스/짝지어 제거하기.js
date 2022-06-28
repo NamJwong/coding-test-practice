@@ -1,9 +1,8 @@
 function solution(s) {
-  for (let i = 0; i < s.length - 1; i++) {
-    if (s[i] === s[i + 1]) {
-      s = s.replace(new RegExp(s[i].repeat(2), 'g'), '');
-      i = -1;
-    }
+  const stack = [s[0]];
+  for (let i = 1; i < s.length; i++) {
+    if (stack[stack.length - 1] === s[i]) stack.pop();
+    else stack.push(s[i]);
   }
-  return s.length ? 0 : 1;
+  return stack.length ? 0 : 1;
 }
