@@ -1,9 +1,15 @@
 
 ## 알고리즘
-
 ### DFS
 - https://github.com/NamJwong/coding-test-practice/pull/36
 - https://github.com/NamJwong/coding-test-practice/pull/35
+
+### BFS
+- https://github.com/NamJwong/coding-test-practice/pull/58
+
+## 자료 구조
+### 스택
+- https://github.com/NamJwong/coding-test-practice/pull/58
 
 ## 수학
 ### 소수 판별
