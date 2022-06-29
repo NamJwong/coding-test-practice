@@ -1,7 +1,7 @@
 function solution(expression) {
   let operatorCopy = expression.match(new RegExp('[-|*|+]', 'g'));
   let operandCopy = expression.split(new RegExp('[-|*|+]', 'g'));
-  const priorityCombination = [
+  const priorityPermutation = [
     ['-', '*', '+'],
     ['-', '+', '*'],
     ['*', '-', '+'],
@@ -12,7 +12,7 @@ function solution(expression) {
   let answer = 0;
   let operator;
   let operand;
-  for (const priority of priorityCombination) {
+  for (const priority of priorityPermutation) {
     operator = [...operatorCopy];
     operand = [...operandCopy];
     for (const p of priority) {
