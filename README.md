@@ -9,7 +9,8 @@
 
 ## 자료 구조
 ### 스택
-- https://github.com/NamJwong/coding-test-practice/pull/58
+- https://github.com/NamJwong/coding-test-practice/pull/58 배열 2개 연속 중복 
+- https://github.com/NamJwong/coding-test-practice/pull/62 중위 연산
 
 ## 수학
 ### 소수 판별
