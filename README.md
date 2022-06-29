@@ -9,7 +9,7 @@
 
 ## 자료 구조
 ### 스택
-- https://github.com/NamJwong/coding-test-practice/pull/58 배열 2개 연속 중복 
+- https://github.com/NamJwong/coding-test-practice/pull/58 배열 2개 연속 중복 제거
 - https://github.com/NamJwong/coding-test-practice/pull/62 중위 연산
 
 ## 수학
@@ -54,6 +54,7 @@
 ### 중복 제거
 - https://github.com/NamJwong/coding-test-practice/pull/6 인접한 숫자
 - https://github.com/NamJwong/coding-test-practice/pull/4 문자열
+- https://github.com/NamJwong/coding-test-practice/pull/58 2개 연속 문자열
 
 ## JavaScript Methods
 ### reduce
