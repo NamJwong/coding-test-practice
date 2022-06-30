@@ -12,6 +12,9 @@
 - https://github.com/NamJwong/coding-test-practice/pull/58 배열 2개 연속 중복 제거
 - https://github.com/NamJwong/coding-test-practice/pull/62 중위 연산
 
+### 큐
+- https://github.com/NamJwong/coding-test-practice/pull/66 작업 순서
+
 ## 수학
 ### 소수 판별
 - https://github.com/NamJwong/coding-test-practice/pull/36 2부터 직접 나누어보는 방법(에라토스테네스 체 사용이 적절치 않을 때)
