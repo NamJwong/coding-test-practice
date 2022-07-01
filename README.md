@@ -69,6 +69,7 @@
 - padStart/End
 - [localeCompare](https://opentutorials.org/course/50/91)
 - [some](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
+- every
 
 ## JavaScript Built-in Objects
 ### Map
