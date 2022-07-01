@@ -9,12 +9,10 @@ function solution(rows, columns, queries) {
 
   for (const query of queries) {
     let min = Number.MAX_VALUE;
-    let x1, y1, x2, y2;
-    if (query[0] < query[2]) {
-      (x1 = query[0]), (y1 = query[1]), (x2 = query[2]), (y2 = query[3]);
-    } else {
-      (x1 = query[2]), (y1 = query[3]), (x2 = query[0]), (y2 = query[1]);
-    }
+    const x1 = query[0],
+      y1 = query[1],
+      x2 = query[2],
+      y2 = query[3];
     let queue = [matrix[x1 + 1][y1]];
     for (let i = y1; i < y2; i++) {
       min = Math.min(min, queue[0]);
