@@ -35,7 +35,7 @@
 - https://github.com/NamJwong/coding-test-practice/pull/41
 
 ### 조합
-- https://github.com/NamJwong/coding-test-practice/pull/79/files
+- https://github.com/NamJwong/coding-test-practice/pull/79
 
 ### 피보나치 수열
 - https://github.com/NamJwong/coding-test-practice/issues/53
@@ -61,6 +61,9 @@
 - https://github.com/NamJwong/coding-test-practice/pull/6 인접한 숫자
 - https://github.com/NamJwong/coding-test-practice/pull/4 문자열
 - https://github.com/NamJwong/coding-test-practice/pull/58 2개 연속 문자열
+
+### 2차원 배열 90도 회전
+- https://github.com/NamJwong/coding-test-practice/pull/83
 
 ## JavaScript Methods
 ### reduce
