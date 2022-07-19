@@ -40,6 +40,9 @@
 ### 피보나치 수열
 - https://github.com/NamJwong/coding-test-practice/issues/53
 
+### 팩토리얼
+- https://github.com/NamJwong/coding-test-practice/pull/89 (오답 코드에 있음)
+
 ## 문자열
 ### 문자열 뒤집기
 - https://github.com/NamJwong/coding-test-practice/pull/40
@@ -67,9 +70,10 @@
 
 ## JavaScript Methods
 ### reduce
-- https://github.com/NamJwong/coding-test-practice/pull/12
-- https://github.com/NamJwong/coding-test-practice/pull/48 합 구하는 용도 X (max 값 업데이트)
-- https://github.com/NamJwong/coding-test-practice/pull/69 합 구하는 용도 X (배열 값 채우기)
+- https://github.com/NamJwong/coding-test-practice/pull/12 합 구하기
+- https://github.com/NamJwong/coding-test-practice/pull/48 max 값 업데이트
+- https://github.com/NamJwong/coding-test-practice/pull/69 배열 만들기
+- https://github.com/NamJwong/coding-test-practice/pull/89 객체 만들기
 
 ### 그 외 사용법은 쉽지만 있다는 것을 기억하고 싶은 메소드
 - padStart/End
