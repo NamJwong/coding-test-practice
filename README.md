@@ -68,7 +68,11 @@
 ### 2차원 배열 90도 회전
 - https://github.com/NamJwong/coding-test-practice/pull/83
 
-## JavaScript Methods
+# JavaScript
+## 큰 숫자 다루기
+- https://github.com/NamJwong/coding-test-practice/pull/105
+- https://github.com/NamJwong/coding-test-practice/pull/97
+## Methods
 ### reduce
 - https://github.com/NamJwong/coding-test-practice/pull/12 합 구하기
 - https://github.com/NamJwong/coding-test-practice/pull/48 max 값 업데이트
