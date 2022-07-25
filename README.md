@@ -43,6 +43,9 @@
 ### 팩토리얼
 - https://github.com/NamJwong/coding-test-practice/pull/89 (오답 코드에 있음)
 
+### 행렬
+- https://github.com/NamJwong/coding-test-practice/pull/139 곱셈
+
 ## 문자열
 ### 문자열 뒤집기
 - https://github.com/NamJwong/coding-test-practice/pull/40
@@ -68,6 +71,9 @@
 ### 2차원 배열 90도 회전
 - https://github.com/NamJwong/coding-test-practice/pull/83
 
+### 3차원 배열
+- https://github.com/NamJwong/coding-test-practice/pull/139
+
 # JavaScript
 ## 큰 숫자 다루기
 - https://github.com/NamJwong/coding-test-practice/pull/105
@@ -92,3 +98,6 @@
 ### Set
 - https://github.com/NamJwong/coding-test-practice/pull/4
 - https://github.com/NamJwong/coding-test-practice/pull/46
+
+# 기타
+- https://github.com/NamJwong/coding-test-practice/pull/139 짧은 코드 vs 가독성
