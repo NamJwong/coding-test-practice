@@ -18,6 +18,7 @@
 ## 수학
 ### 소수 판별
 - https://github.com/NamJwong/coding-test-practice/pull/77 2부터 직접 나누어보는 방법(에라토스테네스 체 사용이 적절치 않을 때)
+- https://github.com/NamJwong/coding-test-practice/pull/156 에라토스테네스의 체
 
 ### 약수
 - https://github.com/NamJwong/coding-test-practice/pull/27 약수 구하기, 약수의 개수가 홀/짝수인지 판별
