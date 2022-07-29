@@ -7,6 +7,9 @@
 ### BFS
 - https://github.com/NamJwong/coding-test-practice/pull/58
 
+### 파라메트릭 서치
+- https://github.com/NamJwong/coding-test-practice/pull/158
+
 ## 자료 구조
 ### 스택
 - https://github.com/NamJwong/coding-test-practice/pull/58 배열 2개 연속 중복 제거
