@@ -82,9 +82,10 @@
 - https://github.com/NamJwong/coding-test-practice/pull/139
 
 # JavaScript
-## 큰 숫자 다루기
-- https://github.com/NamJwong/coding-test-practice/pull/105
-- https://github.com/NamJwong/coding-test-practice/pull/97
+## 큰 숫자/데이터 다루기
+- https://github.com/NamJwong/coding-test-practice/pull/105 큰 숫자
+- https://github.com/NamJwong/coding-test-practice/pull/97 큰 숫자
+- https://github.com/NamJwong/coding-test-practice/pull/166 큰 데이터 console.log
 ## Methods
 ### reduce
 - https://github.com/NamJwong/coding-test-practice/pull/12 합 구하기
