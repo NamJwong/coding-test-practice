@@ -8,6 +8,7 @@
 - https://github.com/NamJwong/coding-test-practice/pull/58
 - https://github.com/NamJwong/coding-test-practice/issues/159
 - https://github.com/NamJwong/coding-test-practice/pull/164 여러 개의 시작점에 대해 동시에 진행하는 BFS
+- https://github.com/NamJwong/coding-test-practice/pull/170 
 
 ### 파라메트릭 서치
 - https://github.com/NamJwong/coding-test-practice/pull/158
@@ -86,6 +87,7 @@
 - https://github.com/NamJwong/coding-test-practice/pull/105 큰 숫자
 - https://github.com/NamJwong/coding-test-practice/pull/97 큰 숫자
 - https://github.com/NamJwong/coding-test-practice/pull/166 큰 데이터 console.log
+- https://github.com/NamJwong/coding-test-practice/pull/170 큰 데이터 큐에 담기
 ## Methods
 ### reduce
 - https://github.com/NamJwong/coding-test-practice/pull/12 합 구하기
