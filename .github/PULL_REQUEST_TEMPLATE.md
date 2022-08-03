@@ -1,8 +1,8 @@
 # 문제
 - close #
 - https://www.acmicpc.net/problem/
-<!-- - level -->
 - 실버
+<!-- - level -->
 
 # 풀이 후기
 
