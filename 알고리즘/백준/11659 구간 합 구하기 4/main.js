@@ -1,14 +1,11 @@
 const solution = (numbers, ranges) => {
   const answer = [];
-  const dp = [numbers[0]];
-  for (let i = 1; i < numbers.length; i++) {
-    dp[i] = dp[i - 1] + numbers[i];
+  const dp = [0, numbers[0]];
+  for (let i = 1; i <= numbers.length; i++) {
+    dp[i] = dp[i - 1] + numbers[i - 1];
   }
   for (let i = 0; i < ranges.length; i++) {
-    answer[i] =
-      ranges[i][0] > 1
-        ? dp[ranges[i][1] - 1] - dp[ranges[i][0] - 2]
-        : dp[ranges[i][1] - 1];
+    answer[i] = dp[ranges[i][1]] - dp[ranges[i][0] - 1];
   }
   return answer.join('\n');
 };
