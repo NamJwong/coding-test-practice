@@ -1,11 +1,17 @@
 const solution = (N, r, c) => {
-  let cnt = -1;
-  let answer;
+  let answer = 0;
+  let isFound = false;
 
   const visit = (x, y, pow) => {
-    // console.log('visit', x, y, pow);
+    const rowEnd = x + (2 ** pow - 1);
+    const colEnd = y + (2 ** pow - 1);
+    if (r < x || r > rowEnd || c < y || c > colEnd) {
+      isFound || (answer += (2 ** pow) ** 2);
+      return;
+    }
     if (pow === 1) {
-      Z(x, y);
+      isFound = true;
+      answer += Z(x, y);
       return;
     }
     const diff = 2 ** (pow - 1);
@@ -16,13 +22,10 @@ const solution = (N, r, c) => {
   };
 
   const Z = (x, y) => {
-    const indexes = [1, 2, 3, 4];
-    indexes.forEach((index) => {
-      cnt++;
-      const pos = move(x, y, index);
-      // console.log(cnt, pos, index);
-      if (pos[0] === r && pos[1] === c) answer = cnt;
-    });
+    for (let i = 1; i <= 4; i++) {
+      const pos = move(x, y, i);
+      if (pos[0] === r && pos[1] === c) return i - 1;
+    }
   };
 
   const move = (x, y, index) => {
