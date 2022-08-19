@@ -42,7 +42,7 @@
 - https://github.com/NamJwong/coding-test-practice/pull/40
 
 ### 순열
-- https://github.com/NamJwong/coding-test-practice/pull/41
+- https://github.com/NamJwong/coding-test-practice/pull/193
 
 ### 조합
 - https://github.com/NamJwong/coding-test-practice/pull/79
