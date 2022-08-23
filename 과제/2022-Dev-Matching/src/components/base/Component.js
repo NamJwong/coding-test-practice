@@ -10,7 +10,7 @@ export default class Component {
     this.render();
   }
   setup() {}
-  mounted() {} // 여기에 useEffect?
+  mounted() {}
   template() {
     return '';
   }
@@ -20,7 +20,7 @@ export default class Component {
   }
   setEvent() {}
   setState(newState) {
-    this.state = { ...this.state, ...newState }; //스프레드 연산자 궁금증: newState가 undefined면 그냥 깔끔하게 무시?
+    this.state = { ...this.state, ...newState };
     this.render();
   }
   addEvent(eventType, selector, callback) {

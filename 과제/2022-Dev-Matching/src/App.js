@@ -12,7 +12,6 @@ export default class App extends Component {
   }
 
   template() {
-    //new 컴포넌트명 하고 템플릿 불러오면 안되나?
     return `
       <div class="SelectedLanguage"></div>
       <form class="SearchInput"></form>
@@ -31,8 +30,6 @@ export default class App extends Component {
   }
 
   setSearchWord() {
-    // useState 마냥 this.state에 아예 이 형태를 묶어놓으면 좋을 듯
-    console.log('dmdld', arguments[0]);
     if (typeof arguments[0] === 'function')
       this.setState({
         searchWord: arguments[0](this.state.searchWord),
@@ -42,7 +39,6 @@ export default class App extends Component {
   }
 
   onChangeInput(suggestionList, searchWord) {
-    // 얘를 쓰는게 낫나?
     this.setState({ suggestionList: suggestionList, searchWord: searchWord });
     // this.setSuggestionList(suggestionList);
     // this.setSearchWord(searchWord);
