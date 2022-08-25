@@ -21,4 +21,8 @@ export default function SearchInput({ $target, initialState, onChange }) {
     ]; // 어떤 기준들로 이 키들을 무시하려고 하는지 잘 모르겠음. 아예 input 내용이 바뀔 때에만 onChange를 실행했으면 좋겠음.
     if (!ACTION_IGNORE_KEYS.includes(e.key)) onChange(e.target.value);
   });
+
+  this.$element.addEventListener('submit', (e) => {
+    e.preventDefault();
+  });
 }
