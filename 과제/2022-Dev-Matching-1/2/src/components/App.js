@@ -9,11 +9,13 @@ export default function App({ $target }) {
   };
 
   this.setState = (nextState) => {
+    // keyword가 달라질 때에만 실행됨. 따라서 suggestion을 초기화 함. 이 내용을 좀 더 명시적으로 나타내도록 리팩토링 해야 할 듯
     this.state = {
       ...this.state,
       ...nextState,
     };
     suggestion.setState({
+      selectedIndex: 0,
       items: this.state.searchedLanguages,
     });
   };
@@ -28,7 +30,6 @@ export default function App({ $target }) {
         });
       } else {
         const languages = await getLanguagesByKeyword(keyword);
-        console.log(this);
         this.setState({
           searchedLanguages: languages,
         });
@@ -39,6 +40,7 @@ export default function App({ $target }) {
   const suggestion = new Suggestion({
     $target,
     initialState: {
+      cursor: 0,
       items: [],
     },
   });
