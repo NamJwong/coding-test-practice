@@ -1,3 +1,5 @@
+const MAX_DISPLAY_COUNT = 5;
+
 // SelectedItems라는 이름으로 바꾼 뒤 좀 더 확실히 관심사의 분리를 할 수 있는 방법이 있을지
 export default function SelectedLanguages({ $target, initialState }) {
   this.$element = document.createElement('div');
@@ -8,6 +10,15 @@ export default function SelectedLanguages({ $target, initialState }) {
 
   this.setState = (nextState) => {
     this.state = nextState;
+
+    if (this.state.selectedLanguages.length > MAX_DISPLAY_COUNT) {
+      const startPosition =
+        this.state.selectedLanguages.length - MAX_DISPLAY_COUNT;
+      this.state.selectedLanguages = this.state.selectedLanguages.slice(
+        startPosition,
+        MAX_DISPLAY_COUNT + startPosition
+      );
+    }
     this.render();
   };
 

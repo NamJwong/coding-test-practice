@@ -4,8 +4,8 @@ export const BASE_URL =
 const request = async (url) => {
   const res = await fetch(url);
 
-  console.log(res);
-  console.log(res.json);
+  // console.log(res);
+  // console.log(res.json());
   if (res.ok) return await res.json();
 
   throw new Error('요청 실패');
