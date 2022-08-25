@@ -1,3 +1,4 @@
+import { getLanguagesByKeyword } from '../api.js';
 import SearchInput from './SearchInput.js';
 
 export default function App({ $target }) {
@@ -6,5 +7,11 @@ export default function App({ $target }) {
     selectedLanguageList: [],
   };
 
-  const searchInput = new SearchInput({ $target, initialState: '' });
+  const searchInput = new SearchInput({
+    $target,
+    initialState: { keyword: '' },
+    onChange: async (keyword) => {
+      const languages = await getLanguagesByKeyword(keyword);
+    },
+  });
 }
