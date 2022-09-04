@@ -12,7 +12,7 @@
 - https://github.com/NamJwong/coding-test-practice/pull/164 여러 개의 시작점에 대해 동시에 진행하는 BFS
 - https://github.com/NamJwong/coding-test-practice/pull/170 
 - https://github.com/NamJwong/coding-test-practice/pull/188 인접 리스트
-- https://github.com/algo-malgo/jwongo-malgo/issues/3 
+- https://github.com/algo-malgo/jwongo-malgo/pull/5 인접 리스트
 
 ### 파라메트릭 서치
 - https://github.com/NamJwong/coding-test-practice/pull/158
