@@ -91,7 +91,7 @@
 
 # JavaScript
 ## 큰 숫자/데이터 다루기
-- https://github.com/NamJwong/coding-test-practice/pull/105 큰 숫자
+- https://github.com/NamJwong/coding-test-practice/pull/105 BigInt
 - https://github.com/NamJwong/coding-test-practice/pull/97 큰 숫자
 - https://github.com/NamJwong/coding-test-practice/pull/166 큰 데이터 console.log
 - https://github.com/NamJwong/coding-test-practice/pull/170 큰 데이터 큐에 담기
