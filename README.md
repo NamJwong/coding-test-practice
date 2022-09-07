@@ -78,6 +78,9 @@
 ### 문자열 비교
 - https://github.com/NamJwong/coding-test-practice/pull/18
 
+### 문자열 변형
+- https://github.com/algo-malgo/jwongo-malgo/pull/18 특정 인덱스 삭제
+
 ## 배열
 ### 중복 제거
 - https://github.com/NamJwong/coding-test-practice/pull/6 인접한 숫자
