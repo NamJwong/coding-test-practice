@@ -5,6 +5,7 @@
 - https://github.com/NamJwong/coding-test-practice/pull/35
 - https://github.com/NamJwong/coding-test-practice/issues/184 yes or no 경우의 수
 - https://github.com/NamJwong/coding-test-practice/pull/203 백트래킹
+- https://github.com/algo-malgo/jwongo-malgo/pull/24 그래프 순회(인접 리스트)
 
 ### BFS
 - https://github.com/NamJwong/coding-test-practice/pull/58
