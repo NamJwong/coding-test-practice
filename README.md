@@ -9,7 +9,7 @@
 
 ### BFS
 - https://github.com/NamJwong/coding-test-practice/pull/58
-- https://github.com/NamJwong/coding-test-practice/issues/159
+- https://github.com/NamJwong/coding-test-practice/pull/160
 - https://github.com/NamJwong/coding-test-practice/pull/164 여러 개의 시작점에 대해 동시에 진행하는 BFS
 - https://github.com/NamJwong/coding-test-practice/pull/170 
 - https://github.com/NamJwong/coding-test-practice/pull/188 인접 리스트
