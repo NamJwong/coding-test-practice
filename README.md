@@ -81,6 +81,7 @@
 
 ### 문자열 변형
 - https://github.com/algo-malgo/jwongo-malgo/pull/18 특정 인덱스 삭제
+- https://github.com/algo-malgo/jwongo-malgo/pull/49 아스키 코드 <-> 문자 변환
 
 ## 배열
 ### 중복 제거
