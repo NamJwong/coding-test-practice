@@ -89,8 +89,9 @@
 - https://github.com/NamJwong/coding-test-practice/pull/4 문자열
 - https://github.com/NamJwong/coding-test-practice/pull/58 2개 연속 문자열
 
-### 2차원 배열 90도 회전
-- https://github.com/NamJwong/coding-test-practice/pull/83
+### 2차원 배열 
+- https://github.com/NamJwong/coding-test-practice/pull/83 90도 회전
+- https://github.com/algo-malgo/jwongo-malgo/pull/64 1차원 배열로 만들어 좌표 값 구하기
 
 ### 3차원 배열
 - https://github.com/NamJwong/coding-test-practice/pull/139
