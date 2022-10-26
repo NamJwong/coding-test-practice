@@ -17,6 +17,7 @@
 
 ### 파라메트릭 서치
 - https://github.com/NamJwong/coding-test-practice/pull/158
+- https://github.com/algo-malgo/jwongo-malgo/pull/74
 
 ## 자료 구조
 ### 스택
