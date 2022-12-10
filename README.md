@@ -6,6 +6,7 @@
 - https://github.com/NamJwong/coding-test-practice/issues/184 yes or no 경우의 수
 - https://github.com/NamJwong/coding-test-practice/pull/203 백트래킹
 - https://github.com/algo-malgo/jwongo-malgo/pull/24 그래프 순회(인접 리스트)
+- https://github.com/algo-malgo/jwongo-malgo/pull/96 개수가 하나로 정해진 조합 만들기
 
 ### BFS
 - https://github.com/NamJwong/coding-test-practice/pull/58
