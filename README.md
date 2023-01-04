@@ -22,6 +22,9 @@
 - https://github.com/NamJwong/coding-test-practice/pull/158
 - https://github.com/algo-malgo/jwongo-malgo/pull/74
 
+## 그리디
+- https://github.com/algo-malgo/jwongo-malgo/pull/114
+
 ## 자료 구조
 ### 스택
 - https://github.com/NamJwong/coding-test-practice/pull/58 배열 2개 연속 중복 제거
