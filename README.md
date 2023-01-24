@@ -91,6 +91,9 @@
 - https://github.com/algo-malgo/jwongo-malgo/pull/18 특정 인덱스 삭제
 - https://github.com/algo-malgo/jwongo-malgo/pull/49 아스키 코드 <-> 문자 변환
 
+### 괄호
+- https://github.com/algo-malgo/jwongo-malgo/pull/119
+
 ## 배열
 ### 중복 제거
 - https://github.com/NamJwong/coding-test-practice/pull/6 인접한 숫자
