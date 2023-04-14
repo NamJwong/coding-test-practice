@@ -17,6 +17,9 @@
 - https://github.com/NamJwong/coding-test-practice/pull/188 인접 리스트
 - https://github.com/algo-malgo/jwongo-malgo/pull/5 인접 리스트
 
+### 다익스트라
+- https://github.com/algo-malgo/jwongo-malgo/pull/152 힙 사용 X, 인접 리스트
+
 ### 파라메트릭 서치
 - https://github.com/NamJwong/coding-test-practice/pull/158
 - https://github.com/algo-malgo/jwongo-malgo/pull/74
